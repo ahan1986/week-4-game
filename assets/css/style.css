@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+.gemimages {
+    max-width: 105px;
+    margin: 0 1% 0 1%;
+}
+.h1header {
+    color: white;
+    background-color: #c7722b;
+    font-size: 39px;
+    width: 33%;
+    padding: 3%;
+    text-align: center;
+}
+.firstbox {
+    max-width: 45%;
+    height: 80;
+    background-color: #fae4d0;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}   
+.gemimg{
+    float: left;
+}
+#numgen {
+    background-color:green;
+    color: white;
+    font-size: 20px;
+    width: 20%;
+    height: 130px;
+    float:left;
+}
+#winlose {
+    background-color: lightskyblue;
+    height: 130px;
+    width: 10%;
+    float: left;
+    margin-left: 40px;
+}
+#winlose > div {
+    padding-left: 10%;
+    font-size: 20px;
+}
+#bob {
+    background-color: green;
+    width: 200px;
+    height: 30px;
+    float: left;
+    color: white;
+    text-align: center;
+}
+#add {
+    background-color: green;
+    height: 130px;
+    width: 190px;
+    border: 2px solid black;
+    margin-top: 20%;
+    font-size: 30px;
+    color: white;
+    float: left;
+}
