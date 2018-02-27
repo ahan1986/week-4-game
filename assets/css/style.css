@@ -1,6 +1,9 @@
 html {
     box-sizing: border-box;
 }
+body {
+    background-image: url("../images/blue.jpg");
+}
 .gemimages {
     max-width: 105px;
     margin: 0 1% 0 1%;
@@ -22,7 +25,8 @@ html {
     font-size: 20px;
 }   
 .gemimg{
-    float: left;
+float: left;
+transform: translate(-300px, 90px);
 }
 #numgen {
     background-color:green;
@@ -34,9 +38,8 @@ html {
 }
 #winlose {
     background-color: lightskyblue;
-    height: 130px;
+    height: 160px;
     width: 10%;
-    float: left;
     margin-left: 40px;
 }
 #winlose > div {
@@ -46,18 +49,23 @@ html {
 #bob {
     background-color: green;
     width: 200px;
-    height: 30px;
-    float: left;
-    color: white;
-    text-align: center;
+    height: auto;
+    font-size: 100px;
+    color: black;
+    /* text-align: center; */
+    transform: translate(-250px, 180px);
 }
 #add {
     background-color: green;
     height: 130px;
     width: 190px;
     border: 2px solid black;
-    margin-top: 20%;
+    transform: translate(-260px, 220px);
     font-size: 30px;
     color: white;
-    float: left;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
