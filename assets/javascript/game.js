@@ -44,11 +44,14 @@ $("#numgen").text(compGen);
      console.log(gem1, gem2, gem3, gem4);
     }
 
+    // selecting the class "row", every time I click on img1 it will add the amount of that respective gem to the adding block.
     $(".row").on("click", "#img1", function(){
         adding += gem1;
         $("#add").text(adding);
+        // if the adding block matches the generated number, it will go to the win function
         if (adding === compGen) {
             wins();
+            // if the adding block does NOT match the generated number, it will run the lose function
         } else if (adding>compGen) {
             lose();
         }
@@ -79,6 +82,7 @@ $("#numgen").text(compGen);
     })
 
 function wins() {
+    // adding a point to the win
         win++;
         $("#win").text(win);
         adding=0;
@@ -86,6 +90,7 @@ function wins() {
     }
     
 function lose() {
+    //adding point to the losses
     losses++;
     $("#losses").text(losses);
     adding=0;
